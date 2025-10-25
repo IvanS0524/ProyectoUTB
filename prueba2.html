@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="prueba.css">
+
+<style>
+.footer-content ul{
+    list-style: none;
+    padding: 0; 
+}
+.socials a i {
+    font-size: 2rem; /* Puedes ajustar el valor a tu gusto */
+}
+.socials {
+    max-width: 90%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    display: flex; /* Alinea los elementos hijos en una fila */
+    gap: 10px; /* Espaciado entre los iconos */
+    justify-content: space-between; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    position: relative; /* Permite posicionar los tooltips correctamente */
+    margin-left: 40px; /* Ajusta el margen izquierdo para centrar el contenido */
+    margin-right: 40px; /* Ajusta el margen derecho para centrar el contenido */
+}
+.socials a {
+    width: 60px;   /* Ajusta el tamaño a tu gusto */
+    height: 60px;
+    background-color: #78896F;
+    padding: 0px;
+    border-radius: 10px;
+    text-decoration: none; /* Opcional: elimina el subrayado de los enlaces */
+    color: white; /* Opcional: color del texto o icono */
+    display: flex; /* Asegura que el contenido dentro del enlace esté centrado */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative;
+    flex-direction: column;
+}
+.socials a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el mouse */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+    background-color: #F8D8A6;
+}
+
+
+
+.tooltip {
+            visibility: hidden;
+            opacity: 0;
+            background: #333;
+            color: #fff;
+            border-radius: 6px;
+            padding: 5px 10px;
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            transition: opacity 0.3s;
+            font-size: 1rem;
+            pointer-events: none;
+            white-space: nowrap;
+}
+.socials a:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .socials {
+        flex-direction: column;      /* Apila los iconos verticalmente */
+        gap: 20px;                   /* Más espacio entre iconos */
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    .socials a {
+        width: 50px;                 /* Iconos más pequeños */
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    .footer-content {
+        padding: 0 10px;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="footer-content">
+            <ul class="socials">
+                <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i><span class="tooltip">Café de la costa</span></a></li>
+                <li><a href="" target="_blank"><i class="fab fa-twitter"></i><span class="tooltip"> @cafedelacosta</span></a></li>
+                <li><a href="" target="_blank"><i class="fab fa-instagram"></i><span class="tooltip"> @cafedelacosta</span></a></li>
+                <li><a href="" target="_blank"><i class="fab fa-whatsapp"></i><span class="tooltip"> 300 1234567</span></a></li>
+            </ul>
+    </div>
+</body>
+</html> 

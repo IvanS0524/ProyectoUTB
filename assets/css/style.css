@@ -1,0 +1,129 @@
+:root {
+    --color-fondo: #131d30;
+    --color-texto: #ffffff;
+    --color-nav: #494c52;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    transition: all 0.3s ease;
+}
+body{
+    /*background-color: #131d30;*/
+    background-color: var(--color-fondo);
+    background-image: url(https://www.w3schools.com/images/background_in_space.webp);
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+.content {
+    border-bottom: 1px solid #494c52;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+.content a:hover {
+    text-decoration: underline;  
+    padding: 10px;
+}
+
+.img {
+    position: left;
+    display: block;
+    max-width: 35%;
+    height: auto;
+    margin: 20px auto; /* Centra las imágenes y añade un margen */
+    flex: 1;
+}
+
+.text {
+    position: right;
+    flex: 1;
+}
+
+.code {
+    width: 40%;
+    padding: 0;
+}
+.code pre,
+.code code {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1.co {
+    text-align: justify;
+    margin: 20px;
+}
+
+h2 {
+    text-align: justify;
+    margin: 20px;
+}
+
+p {
+    text-align: justify;
+    margin: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+ul {
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.wsp {
+    position: fixed;
+    background-color: #0df053;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 50px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center;
+    font-size: 30px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.wsp:hover {
+    text-decoration: none;
+    background-color: white; /* Cambia el fondo a blanco */
+    color: #0df053;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 black, 0 0 0 0 black;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Apila el texto y la imagen */
+        text-align: center; /* Centra el texto */
+    }
+
+    .img {
+        max-width: 100%; /* La imagen ocupa todo el ancho */
+    }
+}
+

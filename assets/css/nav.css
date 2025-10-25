@@ -1,0 +1,36 @@
+nav {
+    background-color: #494c52;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+nav a {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 0;
+    display: inline-block;
+    padding: 20px 15px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+nav a:hover {
+    background-color:  #131d30;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgb(44, 44, 44), 0 0 0 0 black;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+

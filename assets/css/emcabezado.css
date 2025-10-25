@@ -1,0 +1,71 @@
+header {
+    background-color: #131d30;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 80px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-top .logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.header-top h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-bottom {
+    margin-top: 10px;
+}
+
+.header-bottom a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #494c52; 
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 black, 0 0 0 0 black;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Permite que el header se ajuste automáticamente */
+        padding: 20px 10px; /* Reduce el padding para pantallas pequeñas */
+    }
+
+    .header-top {
+        flex-direction: column; /* Apila el logo y el título verticalmente */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .header-top .logo {
+        position: static; /* Elimina la posición absoluta */
+        margin-bottom: 10px; /* Añade espacio debajo del logo */
+        width: 50px; /* Reduce el tamaño del logo */
+        height: 50px;
+    }
+
+}

@@ -1,0 +1,218 @@
+:root {
+    --color-fondo: #131d30;
+    --color-texto: #ffffff;
+    --color-nav: #494c52;
+    --border:var(--color-nav) solid 2px;
+    --color-iconos: grey;
+    --color-iconos-hover: #131d30;
+}
+
+footer {
+    background-color: var(--color-fondo);
+    position: relative;
+    border-radius: 20px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-top .logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.footer-filas > * {
+    flex: 1; /* Hace que cada fila ocupe el mismo tamaño */
+    text-align: center; /* Opcional: centra el contenido dentro de cada fila */
+    padding: 10px; /* Opcional: agrega espacio interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.footer-filas {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.footer-content p {
+    text-align: center;
+    border-bottom: var(--border);
+}
+
+.footerlink{
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    display: flex; /* Alinea los elementos hijos en una fila */
+    flex-direction: column; /* Cambia la dirección a columna */
+    padding: 0;
+    margin: 0;
+    }
+.footerlink a {
+    text-decoration: none; /* Opcional: elimina el subrayado de los enlaces */
+    color: white; /* Opcional: color del texto o icono */
+    display: flex; /* Asegura que el contenido dentro del enlace esté centrado */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.socials {
+    padding: 0;
+    display: flex; /* Alinea los elementos hijos en una fila */
+    gap: 10px; /* Espaciado entre los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+}
+.socials a {
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none; /* Opcional: elimina el subrayado de los enlaces */
+    color: white; /* Opcional: color del texto o icono */
+    display: flex; /* Asegura que el contenido dentro del enlace esté centrado */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+
+.footer-content ul{
+    list-style: none;
+    padding: 0; 
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.inicio {
+    position: absolute; /* Posiciona el elemento de forma absoluta dentro del footer */
+    top: 10px; /* Ajusta la distancia desde la parte superior del footer */
+    right: 10px; /* Ajusta la distancia desde la parte derecha del footer */
+    display: flex; /* Mantiene el diseño flexible si tiene varios elementos */
+    align-items: center; /* Centra verticalmente los elementos dentro de .inicio */
+    margin-top: 16px;
+}
+
+.footerlink a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el mouse */
+    text-decoration: underline;
+}
+
+.footer-content ul{
+    list-style: none;
+    padding: 0; 
+}
+.socials a i {
+    font-size: 1.6rem; /* Puedes ajustar el valor a tu gusto */
+}
+.socials {
+    max-width: 90%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    display: flex; /* Alinea los elementos hijos en una fila */
+    gap: 10px; /* Espaciado entre los iconos */
+    justify-content: space-between; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    position: relative; /* Permite posicionar los tooltips correctamente */
+    margin-left: 40px; /* Ajusta el margen izquierdo para centrar el contenido */
+    margin-right: 40px; /* Ajusta el margen derecho para centrar el contenido */
+}
+.socials a {
+    width: 45px;   /* Ajusta el tamaño a tu gusto */
+    height: 45px;
+    background-color: grey;
+    padding: 0px;
+    border-radius: 10px;
+    text-decoration: none; /* Opcional: elimina el subrayado de los enlaces */
+    color: white; /* Opcional: color del texto o icono */
+    display: flex; /* Asegura que el contenido dentro del enlace esté centrado */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative;
+    flex-direction: column;
+}
+.socials a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el mouse */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+    background-color: var(--color-iconos-hover);
+}
+
+.tooltip {
+            visibility: hidden;
+            opacity: 0;
+            background: #333;
+            color: #fff;
+            border-radius: 6px;
+            padding: 5px 10px;
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            transition: opacity 0.3s;
+            font-size: 0.6rem;
+            pointer-events: none;
+            white-space: nowrap;
+}
+
+.socials a:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .socials {
+        flex-direction: column;      /* Apila los iconos verticalmente */
+        gap: 20px;                   /* Más espacio entre iconos */
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    .socials a {
+        width: 50px;                 /* Iconos más pequeños */
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    .footer-content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footerfilas{
+        text-align: center;
+        align-items: center;
+    }
+    .footerlink{
+        width: 100%;
+        margin-bottom: 3px;
+    }
+}
