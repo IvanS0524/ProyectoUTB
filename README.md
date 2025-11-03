@@ -15,10 +15,10 @@ Este es mi primer proyecto de desarrollo web. La página está hecha con HTML, C
 
 ## 🌐 Enlaces del Proyecto  
 
-- [Página Principal](https://ivans0511.github.io/Proyecto-UTB/)  
-- [HTML]([./html.html](https://ivans0511.github.io/Proyecto-UTB/html.html))  
-- [CSS]([./css.html](https://ivans0511.github.io/Proyecto-UTB/css.html))  
-- [C++](https://ivans0511.github.io/Proyecto-UTB/c++.html)  
-- [Python]([./python.html](https://ivans0511.github.io/Proyecto-UTB/phyton.html))
+- [Página Principal](https://ivans0524.github.io/ProyectoUTB/)  
+- [HTML](https://ivans0524.github.io/ProyectoUTB/html.html)  
+- [CSS](https://ivans0524.github.io/ProyectoUTB/css.html)  
+- [C++](https://ivans0524.github.io/ProyectoUTB/c++.html)  
+- [Python](https://ivans0524.github.io/ProyectoUTB/phyton.html)
 
 ---
